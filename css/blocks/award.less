@@ -1,0 +1,79 @@
+// main: "../main.less"
+
+
+.award {
+    display: flex;
+    width: 100%;
+    height: auto;
+
+    padding-bottom: 4.6875rem;
+}
+.award__inner {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.award__inner-text {
+    width: 100%;
+    max-width: 56.25rem;
+    margin: 0 auto;
+}
+.award__title {
+    
+    font-size: 2.625rem;
+    font-weight: 700;
+    text-align: center;
+    padding-bottom: 1.875rem;
+}
+.award__subtitle {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 160%;
+    padding-bottom: 3.125rem;
+}
+.award__work {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.award__work-btn{
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 15.3125rem;
+    height: 3.125rem;
+    color: @color-btn;
+
+    font-size: 0.9375rem;
+    font-weight: 400;
+    line-height: 213%;
+    border-radius: 1.875rem;
+    background-color: rgba(5, 85, 255, 0.1);
+    justify-content: center;
+    padding-left: 0.75rem;
+
+    &::after {
+        position: absolute;
+        display: block;
+        content: '';
+        top: 0.75rem;
+        left: 0.75rem;
+        width: 1.5rem;
+        height: 1.5rem;
+        background: url(/GrowUpSells/img/ex.svg);
+        background-repeat: no-repeat;
+    }
+
+    &::before {
+        position: absolute;
+        content: '';
+        top: 0.75rem;
+        left: 0.75rem;
+        width: 1.6875rem;
+        height: 1.6875rem;
+        background: #fff;
+        border-radius: 50%;
+    }
+}

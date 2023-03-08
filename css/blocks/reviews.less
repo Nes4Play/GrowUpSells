@@ -1,0 +1,119 @@
+// main: "../main.less"
+
+.review {
+    display: flex;
+    width: 100%;
+    height: auto;
+
+    background: #F8F8FA;
+    margin-top: 4.6875rem;
+}
+.review__inner {
+    padding-top: 9.375rem;
+}
+.review__content {
+    text-align: center;
+}
+.review__subtitle {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 200%;
+    margin-bottom: 2.5rem;
+}
+.review__title {
+    font-weight: 900;
+    font-size: 72px;
+    line-height: 144%;
+    margin-bottom: 4.375rem;
+}
+.review__reviews {
+    display: flex;
+    width: 100%;
+    
+}
+.review__card {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.875rem;
+    justify-content: center;
+
+    padding-bottom: 9.375rem;
+}
+.review__info {
+    width: 28%;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 0.625rem;
+    padding: 1.25rem;
+}
+.review__person {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    position: relative;
+
+    &::after {
+        position: absolute;
+        content: '';
+        width: 1.5625rem;
+        height: 1.5625rem;
+        top: 0;
+        right: 0;
+        display: block;
+        background: url(/GrowUpSells/img/reviews/tw.svg);
+        background-repeat: no-repeat;
+        margin-top: 0.625rem;
+    }
+}
+.review__person-img {
+    position: relative;
+    width: 2.8125rem;
+    height: 2.8125rem;
+    margin-right: 0.625rem;
+    margin-bottom: 15px;
+}
+.review__person-info {
+    position: relative;
+    padding-bottom: 15px;
+}
+.review__name {
+    position: relative;
+    font-weight: 500;
+    font-size: 1rem;
+    color: @color-title;
+    padding-bottom: 9px;
+
+
+    &--approved {
+        &::after {
+            position: absolute;
+            content: '';
+            width: 0.9375rem;
+            height: 1rem;
+            top: 0;
+            right: 1.25rem;
+            display: inline-block;
+            background: url(/GrowUpSells/img/reviews/approved.svg);
+            background-repeat: no-repeat;
+        }
+    }
+}
+.review__at {
+    font-size: 1rem;
+    font-weight: 400;
+    color: @color-at;
+}
+
+.review__text {
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 171%;
+
+    p {
+        padding-bottom: 1.875rem;
+    }
+
+    p:last-child {
+        padding-bottom: 0;
+    }
+}

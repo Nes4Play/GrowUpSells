@@ -1,0 +1,46 @@
+// main: "../main.less"
+
+.menu {
+    display: flex;
+}
+.menu__burger {
+    display: none;
+}
+.menu__list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    column-gap: 2.875rem;
+    row-gap: 15px;
+}
+.menu__item {
+    display: inline-block;
+    position: relative;
+    transition: color .3s ease;
+
+    &::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 4px;
+        bottom: -6px;
+        left: 0;
+        background-color: @color-btn;
+        transform-origin: bottom right;
+        transition: transform 0.25s ease-out;
+    }
+
+    &:hover {
+        color: @color-btn;
+    }
+
+    &:hover::after {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+    }
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
